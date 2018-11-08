@@ -19,10 +19,10 @@ module ActiveAdmin
     #
     module HandleColumn
       DEFAULT_OPTIONS = {
-        move_to_top_url: ->(resource) { url_for([:move_to_top, :admin, resource]) },
+        move_to_top_url: ->(resource) { url_for([:move_to_top, :lavarball, resource]) },
         move_to_top_handle: '&#10514;'.html_safe,
         show_move_to_top_handle: ->(resource) { !resource.first? },
-        sort_url: ->(resource) { url_for([:sort, :admin, resource]) },
+        sort_url: ->(resource) { url_for([:sort, :lavarball, resource]) },
         sort_handle: '&#9776;'.html_safe
       }
 
